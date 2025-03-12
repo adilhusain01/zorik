@@ -48,7 +48,6 @@ export const AuthProvider = ({ children }) => {
 
         if (!checkUserData.exists) {
           // Register new user
-          console.log(userInfo);
 
           const registerResponse = await fetch(
             `${import.meta.env.VITE_SERVER_URI}/api/user/register`,

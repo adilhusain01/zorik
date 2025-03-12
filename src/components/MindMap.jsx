@@ -89,7 +89,6 @@ const MindMap = () => {
         }
       );
       const data = await response.json();
-      console.log(data);
       setMermaidCode(data.mermaidCode);
       if (data.isNew) {
         fetchUserMindmaps();
@@ -201,7 +200,6 @@ const MindMap = () => {
         }/${encodeURIComponent(selectedTopic)}`
       );
       const data = await response.json();
-      console.log(data);
       setTopic(selectedTopic);
       setMermaidCode(data.mermaidCode);
       setExplanations([]);

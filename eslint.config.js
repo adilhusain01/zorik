@@ -34,7 +34,7 @@ export default [
         { allowConstantExport: true },
       ],
       "no-console":
-        process.env.VITE_NODE_ENV === "production"
+        import.meta.env.VITE_NODE_ENV === "production"
           ? ["error", { allow: ["warn", "error"] }]
           : "off",
     },
